@@ -1,0 +1,47 @@
+﻿{
+  "version": "1.0",
+  "description": "System Cleaner Tool Configuration",
+  "modules": [
+    {
+      "name": "TempFiles",
+      "url": "https://raw.githubusercontent.com/AinzAmour/system-cleaner/main/modules/TempFiles.ps1",
+      "description": "Clean temporary files from various system locations",
+      "category": "System",
+      "requiresAdmin": false
+    },
+    {
+      "name": "WindowsUpdate",
+      "url": "https://raw.githubusercontent.com/AinzAmour/system-cleaner/main/modules/WindowsUpdate.ps1",
+      "description": "Clean Windows Update cache and old update files",
+      "category": "System",
+      "requiresAdmin": true
+    },
+    {
+      "name": "RecycleBin",
+      "url": "https://raw.githubusercontent.com/AinzAmour/system-cleaner/main/modules/RecycleBin.ps1",
+      "description": "Empty Recycle Bin for all drives",
+      "category": "System",
+      "requiresAdmin": false
+    },
+    {
+      "name": "BrowserCache",
+      "url": "https://raw.githubusercontent.com/AinzAmour/system-cleaner/main/modules/BrowserCache.ps1",
+      "description": "Clean cache from popular web browsers",
+      "category": "Applications",
+      "requiresAdmin": false
+    },
+    {
+      "name": "SystemLogs",
+      "url": "https://raw.githubusercontent.com/AinzAmour/system-cleaner/main/modules/SystemLogs.ps1",
+      "description": "Clean old system logs and event logs",
+      "category": "System",
+      "requiresAdmin": true
+    }
+  ],
+  "settings": {
+    "defaultModules": ["TempFiles", "RecycleBin", "BrowserCache"],
+    "backupEnabled": true,
+    "loggingEnabled": true,
+    "maxLogAge": 30
+  }
+} 
